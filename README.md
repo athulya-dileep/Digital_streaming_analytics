@@ -132,6 +132,10 @@ COUNT(DISTINCT user_id) AS total_users,
 ROUND((COUNT(DISTINCT CASE WHEN status = 'Active' THEN user_id END) / COUNT(DISTINCT user_id)) * 100, 2) AS retention_rate
 FROM subscription;
 
+Current Date and Time SELECT NOW(); SELECT DATE(NOW()); SELECT CURDATE(); SELECT DATE_FORMAT(CURDATE(), ‘%d/%m/%y’);
+
+Date Difference SELECT DATEDIFF(CURDATE(), ‘2025-09-20’);
+
 Usage
 
 1.Create Database and Tables:
