@@ -194,3 +194,6 @@ SELECT Date(now()); # to get only date
 SELECT curdate(); # to get approximate current date when there are many dates
 SELECT date_format(curdate(),'%d/%m/%y'); # to get desired date format
 SELECT datediff(curdate(),'2024-01-18'); # to get number of days
+
+
+
